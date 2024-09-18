@@ -26,7 +26,6 @@ export class HomeComponent {
   private readonly _AddProductService = inject(AddProductService)
   private readonly _WishlistService = inject(WishlistService)
   private readonly _ToastService = inject(ToastrService)
-
   productList: WritableSignal<Product[]> = signal([]);
   categoriesList: WritableSignal<Categories[]> = signal([]);
   currentPage: number = 1;
